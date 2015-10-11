@@ -56,13 +56,14 @@ The whole process takes about half and hour:
     Process 7 of 8 is on wenhuizhang
     pi is approximately 3.1415926544231247, Error is 0.0000000008333316
     wall clock time = 0.099858
-
-```
+   ```
+   
+   
 ##Part 2: Run Sample Examples
 
 1. go to your working directory on Koding
 
-`cd /home/ur_name/`
+   `cd /home/ur_name/`
 
 2. clone the tutorial from github
 
@@ -70,6 +71,7 @@ The whole process takes about half and hour:
    git clone https://github.com/wesleykendall/mpitutorial
    cd mpitutorial/tutorials/mpi-hello-world/code`
    ```
+   
 3. compile and run
 
    ```
