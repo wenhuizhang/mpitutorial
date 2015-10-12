@@ -102,11 +102,49 @@ The whole process takes about half and hour:
    ```
    $ mpirun -n 2  ./mpi-send-and-receive/code/send_recv
    Process 1 received number -1 from process 0
+   
+   $ mpirun -n 5  ./mpi-send-and-receive/code/ring
+   Process 1 received token -1 from process 0
+   Process 2 received token -1 from process 1
+   Process 3 received token -1 from process 2
+   Process 4 received token -1 from process 3
+   Process 0 received token -1 from process 4
+   
+   $ mpirun -n 2  ./mpi-send-and-receive/code/ping_pong
+   0 sent and incremented ping_pong_count 1 to 1
+   1 received ping_pong_count 1 from 0
+   1 sent and incremented ping_pong_count 2 to 0
+   0 received ping_pong_count 2 from 1
+   0 sent and incremented ping_pong_count 3 to 1
+   1 received ping_pong_count 3 from 0
+   1 sent and incremented ping_pong_count 4 to 0
+   0 received ping_pong_count 4 from 1
+   0 sent and incremented ping_pong_count 5 to 1
+   1 received ping_pong_count 5 from 0
+   1 sent and incremented ping_pong_count 6 to 0
+   0 received ping_pong_count 6 from 1
+   0 sent and incremented ping_pong_count 7 to 1
+   1 received ping_pong_count 7 from 0
+   1 sent and incremented ping_pong_count 8 to 0
+   0 received ping_pong_count 8 from 1
+   0 sent and incremented ping_pong_count 9 to 1
+   1 received ping_pong_count 9 from 0
+   1 sent and incremented ping_pong_count 10 to 0
+   0 received ping_pong_count 10 from 1
    ```
+   
    
    - dynamic-receiving-with-mpi-probe-and-mpi-status tutorial
    ```
    $ mpirun -n 2 ./dynamic-receiving-with-mpi-probe-and-mpi-status/code/check_status
    0 sent 5 numbers to 1
    1 received 5 numbers from 0. Message source = 0, tag = 0
+   
+   $ mpirun -n 2  ./dynamic-receiving-with-mpi-probe-and-mpi-status/code/probe
+   0 sent 28 numbers to 1
+   1 dynamically received 28 numbers from 0.
+   ```
+   - other tutorials
+   - - point-to-point-communication-application-random-walk tutorial
+   ```
    ```
