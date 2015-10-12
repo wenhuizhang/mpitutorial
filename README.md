@@ -90,6 +90,13 @@ The whole process takes about half and hour:
    $ sudo make
    $ cd  ~/mpitutorial/tutorials 
    ```
+   
+   ```
+   Usage: ./mpirun -n/-np {value}   ./app               // number of processes
+   ```
+   Details could be read from ***http://wiki.mpich.org/mpich/index.php/Using_the_Hydra_Process_Manager***[http://wiki.mpich.org/mpich/index.php/Using_the_Hydra_Process_Manager]
+   
+4. Tutorials    
    - mpi-helloworld tutorial
    ```
    $ mpirun -n 4  ./mpi-hello-world/code/mpi_hello_world
@@ -144,7 +151,16 @@ The whole process takes about half and hour:
    0 sent 28 numbers to 1
    1 dynamically received 28 numbers from 0.
    ```
- 4. other tutorials
-   * point-to-point-communication-application-random-walk tutorial
+   
+   - point-to-point-communication-application-random-walk tutorial
    ```
+   $ sudo mpirun -n 2  ./point-to-point-communication-application-random-walk/code/random_walk 100 5 00 20
+   Process 1 initiated 0 walkers in subdomain 50 - 99
+   Process 1 sending 0 outgoing walkers to process 0
+   Process 0 initiated 0 walkers in subdomain 0 - 49
+   Process 0 sending 0 outgoing walkers to process 1
+   Process 1 received 0 incoming walkers
+   Process 1 done
+   Process 0 received 0 incoming walkers
+   Process 0 done
    ```
