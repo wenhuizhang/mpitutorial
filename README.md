@@ -94,9 +94,10 @@ The whole process takes about half and hour:
    ```
    Usage: ./mpirun -n/-np {value}   ./app               // number of processes
    ```
-   Details could be read from ***http://wiki.mpich.org/mpich/index.php/Using_the_Hydra_Process_Manager***[http://wiki.mpich.org/mpich/index.php/Using_the_Hydra_Process_Manager]
+   Details could be found from ***http://wiki.mpich.org/mpich/index.php/Using_the_Hydra_Process_Manager***
    
-4. Tutorials    
+4. Tutorial Samples
+
    - mpi-helloworld tutorial
    ```
    $ mpirun -n 4  ./mpi-hello-world/code/mpi_hello_world
