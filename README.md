@@ -144,7 +144,7 @@ The whole process takes about half and hour:
    0 sent 28 numbers to 1
    1 dynamically received 28 numbers from 0.
    ```
-   - other tutorials
-   - - point-to-point-communication-application-random-walk tutorial
+ 4. other tutorials
+   * point-to-point-communication-application-random-walk tutorial
    ```
    ```
